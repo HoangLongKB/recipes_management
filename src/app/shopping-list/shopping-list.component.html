@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-md-5">
+        <div class="row">
+            <div class="col-md-12">
+                <app-shopping-edit (onAddIngredient)="addNewIngredient($event)"></app-shopping-edit>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-action border border-primary"
+                    *ngFor="let ingredient of ingredients">
+                        <a href="#" class="m-0 text-decoration-none">
+                        <p class="text-dark d-inline mr-2">{{ingredient.name}}</p>  
+                        <span class="badge badge-pill badge-primary ml-auto">{{ingredient.amount}}</span>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

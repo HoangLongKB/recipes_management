@@ -1,0 +1,12 @@
+<div class="d-flex flex-row justify-content-between">
+    <div class="col-md-9 my-auto">
+        <div class="flex-colunm align-items-start mr-auto">
+            <h4 class="text-info">{{recipe.name}}</h4>
+            <p class="text-truncate">{{recipe.description}}</p>
+        </div>
+    </div>
+    <div class="col-md-3 my-auto">
+        <img [src]="recipe.imagePath" alt="{{recipe.name}} image" style="max-height: 70px;"
+            class="img-fluid my-auto rounded">
+    </div>
+</div>

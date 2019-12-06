@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-row">
+            <div class="form-group col-md-9">
+                <label for="name" class="font-weight-bold">Name</label>
+                <input #ipIngredientName type="email" class="form-control" id="name" placeholder="Ingredient Name">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="amount" class="font-weight-bold">Amount</label>
+                <input #ipIngredientAmount type="text" class="form-control" id="amount" placeholder="Amount">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <button class="btn btn-success mr-1" type="submit"
+        (click)="addIngredient(ipIngredientName, ipIngredientAmount)">Add</button>
+        <button class="btn btn-danger mr-1" type="button">Delete</button>
+        <button class="btn btn-primary mr-1" type="button">Clear</button>
+    </div>
+</div>

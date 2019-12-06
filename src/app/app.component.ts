@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipes-management';
+  menuItem: string = 'recipes';
+  navigateMenuItem(item: string) {
+    this.menuItem = item;
+  }
 }

@@ -1,0 +1,17 @@
+<div class="row my-2">
+    <div class="col-md-12">
+        <button class="btn btn-success">New Recipe</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <ul class="list-group">
+
+            <li class="list-group-item p-1 border border-info mb-1 list-group-item-action"
+                *ngFor="let recipe of recipes"
+                (click)="chooseRecipe(recipe)">
+                <app-recipe-item [recipe]="recipe"></app-recipe-item>
+            </li>
+        </ul>
+    </div>
+</div>
